@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 64f0ca9a1409a9d43ae543e372e51bbb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4156461483299778628
+    second: inBattleCardStatus_0_0
+  - first:
+      213: 5167127734240831036
+    second: inBattleCardStatus_0_1
+  - first:
+      213: -281841957774576486
+    second: inBattleCardStatus_0_2
+  - first:
+      213: 6705761521895763173
+    second: inBattleCardStatus_0_3
+  - first:
+      213: 2860758588511731309
+    second: inBattleCardStatus_0_4
+  - first:
+      213: -3025272974015802911
+    second: inBattleCardStatus_0_5
+  - first:
+      213: 6387800603811047767
+    second: inBattleCardStatus_0_6
+  - first:
+      213: 4936388662627285985
+    second: inBattleCardStatus_0_7
+  - first:
+      213: -5537208040513142810
+    second: inBattleCardStatus_0_8
+  - first:
+      213: -585211865123152729
+    second: inBattleCardStatus_0_9
+  - first:
+      213: -7380448939137384975
+    second: inBattleCardStatus_0_10
+  - first:
+      213: -1414712636050180927
+    second: inBattleCardStatus_0_11
+  - first:
+      213: 9136742950841412697
+    second: inBattleCardStatus_0_12
+  - first:
+      213: -8881882508698590161
+    second: inBattleCardStatus_0_13
+  - first:
+      213: -478294387699722912
+    second: inBattleCardStatus_0_14
+  - first:
+      213: 564604315601278285
+    second: inBattleCardStatus_0_15
+  - first:
+      213: -3081848667756219085
+    second: inBattleCardStatus_0_16
+  - first:
+      213: -4955752329563529385
+    second: inBattleCardStatus_0_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 92
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4403daa72b7bea930800000000000000
+      internalID: 4156461483299778628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 87
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c366e743c4355b740800000000000000
+      internalID: 5167127734240831036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 93
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94bb009b32b61cf0800000000000000
+      internalID: -281841957774576486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 93
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec64155396af0d50800000000000000
+      internalID: 6705761521895763173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 94
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6eb36087c473b720800000000000000
+      internalID: 2860758588511731309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 94
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1d23b32421406d0800000000000000
+      internalID: -3025272974015802911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 52
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759ee2e1ec606a850800000000000000
+      internalID: 6387800603811047767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 53
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb3a25a553918440800000000000000
+      internalID: 4936388662627285985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 53
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eff6c1ef92e723b0800000000000000
+      internalID: -5537208040513142810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_9
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 53
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac9df4c8e8e0e7f0800000000000000
+      internalID: -585211865123152729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 49
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdbecb0bc0639990800000000000000
+      internalID: -7380448939137384975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 54
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4f8fc5a5eed5ce0800000000000000
+      internalID: -1414712636050180927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_12
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 54
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ce4f42e4b3cce70800000000000000
+      internalID: 9136742950841412697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 14
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24e344aae63db480800000000000000
+      internalID: -8881882508698590161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 13
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065581bd9c1cc59f0800000000000000
+      internalID: -478294387699722912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 13
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45111632a0e5d700800000000000000
+      internalID: 564604315601278285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_16
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 14
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33531ea07f21b35d0800000000000000
+      internalID: -3081848667756219085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inBattleCardStatus_0_17
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 14
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f1d815381a93bb0800000000000000
+      internalID: -4955752329563529385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

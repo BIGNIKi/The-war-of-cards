@@ -1,0 +1,821 @@
+fileFormatVersion: 2
+guid: f0f904efd12a8bb489f4de1629b79b61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8821297486294334817
+    second: Explosion_dopol_0_0
+  - first:
+      213: 1549335462263097508
+    second: Explosion_dopol_0_1
+  - first:
+      213: -1547593325946493652
+    second: Explosion_dopol_0_2
+  - first:
+      213: 669202725671872025
+    second: Explosion_dopol_0_3
+  - first:
+      213: -1655988647039178571
+    second: Explosion_dopol_0_4
+  - first:
+      213: 8265972897717097559
+    second: Explosion_dopol_0_5
+  - first:
+      213: -2284135375444014922
+    second: Explosion_dopol_0_6
+  - first:
+      213: -1284059718304521758
+    second: Explosion_dopol_0_7
+  - first:
+      213: -5497625622311469288
+    second: Explosion_dopol_0_8
+  - first:
+      213: -1439434204998830900
+    second: Explosion_dopol_0_9
+  - first:
+      213: 8124246290723344165
+    second: Explosion_dopol_0_10
+  - first:
+      213: -1437175169567025428
+    second: Explosion_dopol_0_11
+  - first:
+      213: -5037303534958689076
+    second: Explosion_dopol_0_12
+  - first:
+      213: -3238709754406708952
+    second: Explosion_dopol_0_13
+  - first:
+      213: -6946132175784243132
+    second: Explosion_dopol_0_14
+  - first:
+      213: 1579468175573304405
+    second: Explosion_dopol_0_15
+  - first:
+      213: -3475896074864399314
+    second: Explosion_dopol_0_16
+  - first:
+      213: -8500004629541004162
+    second: Explosion_dopol_0_17
+  - first:
+      213: 8700649626931084546
+    second: Explosion_dopol_0_18
+  - first:
+      213: -8646923977791399559
+    second: Explosion_dopol_0_19
+  - first:
+      213: 8370888893833885822
+    second: Explosion_dopol_0_20
+  - first:
+      213: 1803220693276426325
+    second: Explosion_dopol_0_21
+  - first:
+      213: 3733795718593604005
+    second: Explosion_dopol_0_22
+  - first:
+      213: -7507489230150569934
+    second: Explosion_dopol_0_23
+  - first:
+      213: 1603869723139759558
+    second: Explosion_dopol_0_24
+  - first:
+      213: 782755518268987878
+    second: Explosion_dopol_0_25
+  - first:
+      213: -7021009659860264600
+    second: Explosion_dopol_0_26
+  - first:
+      213: 3693404448286586680
+    second: Explosion_dopol_0_27
+  - first:
+      213: 2598236495809840934
+    second: Explosion_dopol_0_28
+  - first:
+      213: -3260364988090050212
+    second: Explosion_dopol_0_29
+  - first:
+      213: 6320149456490834668
+    second: Explosion_dopol_0_30
+  - first:
+      213: 1028381537969483776
+    second: Explosion_dopol_0_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Explosion_dopol_0_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9241676ca4749580800000000000000
+      internalID: -8821297486294334817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a88b1ae468508510800000000000000
+      internalID: 1549335462263097508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25a13ec118d58ae0800000000000000
+      internalID: -1547593325946493652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916256a555c794900800000000000000
+      internalID: 669202725671872025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8662d691fb409e0800000000000000
+      internalID: -1655988647039178571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_5
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7541f633e82a6b270800000000000000
+      internalID: 8265972897717097559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_6
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b881c75afe1d40e0800000000000000
+      internalID: -2284135375444014922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_7
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1221c4d7a1e2ee0800000000000000
+      internalID: -1284059718304521758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_8
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ff90acf9284b3b0800000000000000
+      internalID: -5497625622311469288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_9
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc47f7d873a160ce0800000000000000
+      internalID: -1439434204998830900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_10
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f895215fe1fb070800000000000000
+      internalID: 8124246290723344165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_12
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4c7fcaf17e71ab0800000000000000
+      internalID: -5037303534958689076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_13
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829def543aacd03d0800000000000000
+      internalID: -3238709754406708952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_14
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440187b96916a9f90800000000000000
+      internalID: -6946132175784243132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_15
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 157
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554c413ffe56be510800000000000000
+      internalID: 1579468175573304405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c688d9fe223cfc0800000000000000
+      internalID: -3475896074864399314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c580b03dae90a80800000000000000
+      internalID: -8500004629541004162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_18
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dbc58dcbaeeb870800000000000000
+      internalID: 8700649626931084546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_19
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9799fef9474fff780800000000000000
+      internalID: -8646923977791399559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e783b3b191f5b2470800000000000000
+      internalID: 8370888893833885822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_21
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550006aaaa3560910800000000000000
+      internalID: 1803220693276426325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_22
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a965ae6c6b11d330800000000000000
+      internalID: 3733795718593604005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_23
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230fdc1525a00d790800000000000000
+      internalID: -7507489230150569934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_24
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cddfb9f307124610800000000000000
+      internalID: 1603869723139759558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_25
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e956642ff7ecda00800000000000000
+      internalID: 782755518268987878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_27
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83738f7f6cb914330800000000000000
+      internalID: 3693404448286586680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_29
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5995c6415bd0c2d0800000000000000
+      internalID: -3260364988090050212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_30
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaa381f17ea5b750800000000000000
+      internalID: 6320149456490834668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_dopol_0_31
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 61
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000bd386f8b854e00800000000000000
+      internalID: 1028381537969483776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
