@@ -941,14 +941,6 @@ public class atPlayerWindow : MonoBehaviour {
 	}
 
 	public IEnumerator updateInfoProfile() { //загружает данные клиента users
-		/*		float timeiii = 0;
-				while(timeiii <= 5f) {
-					timeiii += Time.deltaTime;
-					yield return null;
-				}*/
-		//Debug.Log("Дошёл");
-
-		//Debug.Log(mainInfoProfile.login);
 		WWWForm form = new WWWForm();
 		form.AddField("Login", mainInfoProfile.login);
 		UnityWebRequest www = UnityWebRequest.Post("http://thearmynations.ru/main/getUserInfo.php", form);
@@ -3378,16 +3370,6 @@ public class paramUnits{ //цены на технику (на сервере)
 }
 
 [Serializable]
-public class Profile { //информация юзера
-	public string login;
-	public int money;
-	public int expi;
-	public int gold;
-	public string info_tanks;
-	public string shtabs;
-}
-
-[Serializable]
 public class shtabsOfUser{ //информация о штабах игрока
 	public List<shtab> shtabs;
 }
@@ -3446,6 +3428,17 @@ public class enemyX {
 	public infoToEnemyMain infoEnemy; //infoEnemyMain
 	public int isAmaFirst; //я хожу первый?
 	public bool amaSecond; //true - меня нашли, false - я нашёл
+}
+
+[Serializable]
+public class Profile //информация юзера
+{
+	public string login;
+	public int money;
+	public int expi;
+	public int gold;
+	public string info_tanks;
+	public string shtabs;
 }
 
 [Serializable]
