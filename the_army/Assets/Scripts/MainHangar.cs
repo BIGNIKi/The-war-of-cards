@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.UI;
 
 #pragma warning disable 0649
 
@@ -19,6 +20,10 @@ namespace MyNameSpace
         public MainInfo accountInfo;
 
         public GameObject prefOfShtab; //префаб штаба
+
+        public DataSet dataset;
+
+        public LocalisationData localization;
 
         //[SerializeField] - если это написать перед приватным полем класса, то это поле будет отображаться в редакторе
         //[Range(0, 100)] - появится удобный ползунок для изменения значения
@@ -82,20 +87,82 @@ namespace MyNameSpace
 
             for(int i = 0; i < accountInfo.headQuars.Count; i++)
             {
-                GameObject neww = Instantiate(prefOfShtab);
-                if(i != 0)
-                {
-                    neww.GetComponent<RectTransform>().localScale = new Vector3(0.6f, 0.6f, 0.6f); //размеры всех штабов меньше, чем размер выбранного штаба
-                }
-                neww.transform.SetParent(sliderShtab.transform, false);
-                neww.name = accountInfo.headQuars[i].name;
-                //TODO
+                DataSet.HeadquarterInfo headInfo = dataset.GetHeadquarterInfoByName(accountInfo.headQuars[i].name);
+                bool isBig = false;
+                if(i == 0) isBig = true;
+                AddHeadQuarter(headInfo, isBig, accountInfo.headQuars[i]);
             }
+            //я бы очень хотел исполнить строку ниже, но так как кадр ещё не сменился нельзя получить новосозданных детей (их не существуют в контексте текущего кадра)
+            //поэтому приходится делать костыли по типу isBig
+            //headSlider.transform.GetChild(0).gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+        }
+
+        private void AddHeadQuarter(DataSet.HeadquarterInfo headInf, bool isBig, Headquarter userHeadInf)
+        {
+            GameObject sliderShtab = GameObject.Find("Main Camera/Canvas/background/sliderShtab (1)/sliderShtab");
+            GameObject neww = Instantiate(prefOfShtab);
+            if(!isBig)
+            {
+                neww.GetComponent<RectTransform>().localScale = new Vector3(0.6f, 0.6f, 0.6f); //изначально созданный штаб маленького размера
+            }
+            else
+            {
+                neww.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1); //изначально созданный штаб маленького размера
+            }
+            
+            neww.transform.SetParent(sliderShtab.transform, false);
+            neww.name = headInf.name;
+            neww.transform.GetComponent<Image>().sprite = dataset.GetHeadquarterSpriteByName(headInf.name); //main picture of headquarter
+            Transform structure = neww.transform.Find("bodyPapkaImg/structure");
+
+            switch(localization.language)
+            {
+                case LocalisationData.Language.Russian:
+                    structure.Find("NameBaseText").GetComponent<Text>().text = headInf.info0rus;
+                    structure.Find("discriptionBaseText").GetComponent<Text>().text = headInf.info1rus;
+                    break;
+                case LocalisationData.Language.English:
+                    structure.Find("NameBaseText").GetComponent<Text>().text = headInf.info0eng;
+                    structure.Find("discriptionBaseText").GetComponent<Text>().text = headInf.info1eng;
+                    break;
+            }
+            structure.Find("kolodaText").GetComponent<Text>().text = "Имя колоды";
+            structure.Find("sortToCentreFIST/powerText").GetComponent<Text>().text = headInf.power.ToString() + " + power from cards";
+            structure.Find("sortToCentreEXP/expText").GetComponent<Text>().text = userHeadInf.exp.ToString();
+            String tmp = headInf.nation; //нация штаба
+            if(tmp.Equals("USSR"))
+            { 
+                Instantiate(dataset.prefOfFlags[0], neww.transform.Find("bodyPapkaImg/structure/flagImg")); //здесь генерю нужный флаг
+            }
+            else if(tmp.Equals("Germany"))
+            {
+                Instantiate(dataset.prefOfFlags[1], neww.transform.Find("bodyPapkaImg/structure/flagImg"));
+            }
+            else if(tmp.Equals("USA"))
+            {
+                Instantiate(dataset.prefOfFlags[2], neww.transform.Find("bodyPapkaImg/structure/flagImg"));
+            }
+        }
+
+        private Headquarter GetUserHeadquarter(string name)
+        {
+            for(int i = 0; i<accountInfo.headQuars.Count; i++)
+            {
+                if(accountInfo.headQuars[i].name.Equals(name))
+                {
+                    return accountInfo.headQuars[i];
+                }
+                if(i == accountInfo.headQuars.Count-1)
+                {
+                    Debug.LogError("Headquarter isn't found");
+                }
+            }
+            return new Headquarter();
         }
 
         void Update()
         {
-
+            
         }
 
         [Serializable]
