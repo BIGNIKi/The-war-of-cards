@@ -57,16 +57,19 @@
     <Compile Include="Assets\dontDestr.cs" />
     <Compile Include="Assets\Scripts\MainHangar.cs" />
     <Compile Include="Assets\sendGetMsg.cs" />
+    <Compile Include="Assets\Scripts\SetLocalisation.cs" />
+    <Compile Include="Assets\Scripts\HQredLight.cs" />
     <Compile Include="Assets\objectMain.cs" />
+    <Compile Include="Assets\Scripts\Util.cs" />
     <Compile Include="Assets\atPlayerWindow.cs" />
+    <Compile Include="Assets\Scripts\SlideHQ.cs" />
     <Compile Include="Assets\moveAnimDie.cs" />
     <Compile Include="Assets\Scripts\DataSet.cs" />
     <Compile Include="Assets\memForCells.cs" />
+    <Compile Include="Assets\Scripts\LocalisationData.cs" />
     <Compile Include="Assets\test.cs" />
     <Compile Include="Assets\rememberPos.cs" />
-    <Compile Include="Assets\Scripts\LocalisationData.cs" />
-    <Compile Include="Assets\Scripts\SetLocalisation.cs" />
-    <Compile Include="Assets\Scripts\Util.cs" />
+    <Compile Include="Assets\Scripts\Editor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

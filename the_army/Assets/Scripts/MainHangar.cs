@@ -5,6 +5,7 @@ using System.IO;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.UI;
+using System.Text;
 
 #pragma warning disable 0649
 
@@ -25,14 +26,18 @@ namespace MyNameSpace
 
         public LocalisationData localization;
 
+        public static Vector3 sizeOfSmallHQ = new Vector3(0.6f, 0.6f, 0.6f);
+
         //[SerializeField] - если это написать перед приватным полем класса, то это поле будет отображаться в редакторе
         //[Range(0, 100)] - появится удобный ползунок для изменения значения
         //[Space] - добавит отступ в инспекторе
 
         void Start()
         {
-            //LoadProfileDebugJson();
-            LoadProfileDebugBinary();
+            LoadProfileDebugJson();
+            //Util.ToBinaryAndCreateFile<MainInfo>(accountInfo);
+            LoadMainStuffs();
+            //LoadProfileDebugBinary();
             InitAllHeadQuarters();
         }
 
@@ -45,7 +50,7 @@ namespace MyNameSpace
             {
                 StreamReader sr = new StreamReader("./NewJson.json"); //штука, которая будет читать
                 if(sr != null) //если все норм
-                { 
+                {
                     string userInfoText = sr.ReadToEnd();
                     sr.Close(); //закрыли файл
                     accountInfo = JsonUtility.FromJson<MainInfo>(userInfoText);
@@ -70,6 +75,17 @@ namespace MyNameSpace
                 }
             }
             Debug.LogError("Couldn't find a file.");
+        }
+
+        /// <summary>
+        /// загружает имя профиля, число денег, опыта и золота
+        /// </summary>
+        private void LoadMainStuffs()
+        {
+            GameObject.Find("Main Camera/Canvas/background/Profile/name").GetComponent<Text>().text = accountInfo.login;
+            GameObject.Find("Main Camera/Canvas/UpPlashkaImg/moneyHere/Text").GetComponent<Text>().text = accountInfo.money.ToString();
+            GameObject.Find("Main Camera/Canvas/UpPlashkaImg/freExpHere/Text").GetComponent<Text>().text = accountInfo.expi.ToString();
+            GameObject.Find("Main Camera/Canvas/UpPlashkaImg/goldHere/Text").GetComponent<Text>().text = accountInfo.gold.ToString();
         }
 
         /// <summary>
@@ -103,13 +119,13 @@ namespace MyNameSpace
             GameObject neww = Instantiate(prefOfShtab);
             if(!isBig)
             {
-                neww.GetComponent<RectTransform>().localScale = new Vector3(0.6f, 0.6f, 0.6f); //изначально созданный штаб маленького размера
+                neww.GetComponent<RectTransform>().localScale = sizeOfSmallHQ; //изначально созданный штаб маленького размера
             }
             else
             {
                 neww.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1); //изначально созданный штаб маленького размера
             }
-            
+
             neww.transform.SetParent(sliderShtab.transform, false);
             neww.name = headInf.name;
             neww.transform.GetComponent<Image>().sprite = dataset.GetHeadquarterSpriteByName(headInf.name); //main picture of headquarter
@@ -126,12 +142,11 @@ namespace MyNameSpace
                     structure.Find("discriptionBaseText").GetComponent<Text>().text = headInf.info1eng;
                     break;
             }
-            structure.Find("kolodaText").GetComponent<Text>().text = "Имя колоды";
             structure.Find("sortToCentreFIST/powerText").GetComponent<Text>().text = headInf.power.ToString() + " + power from cards";
-            structure.Find("sortToCentreEXP/expText").GetComponent<Text>().text = userHeadInf.exp.ToString();
+            structure.Find("sortToCentreEXP/expText").GetComponent<Text>().text = SplitStr(userHeadInf.exp.ToString(), 3);
             String tmp = headInf.nation; //нация штаба
             if(tmp.Equals("USSR"))
-            { 
+            {
                 Instantiate(dataset.prefOfFlags[0], neww.transform.Find("bodyPapkaImg/structure/flagImg")); //здесь генерю нужный флаг
             }
             else if(tmp.Equals("Germany"))
@@ -142,17 +157,53 @@ namespace MyNameSpace
             {
                 Instantiate(dataset.prefOfFlags[2], neww.transform.Find("bodyPapkaImg/structure/flagImg"));
             }
+
+            for(int i = 0; i<userHeadInf.decks.Count; i++)
+            {
+                if(userHeadInf.decks[i].isSelected)
+                {
+                    structure.Find("kolodaText").GetComponent<Text>().text = userHeadInf.decks[i].name;
+                    break;
+                }
+                if(i == userHeadInf.decks.Count-1)
+                {
+                    Debug.LogError("There are no selected deck");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Вставляет пробелы в строку через каждые maxSymbols начиная с конца
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="maxSymbols"></param>
+        /// <returns></returns>
+        private string SplitStr(string str, int maxSymbols)
+        {
+            var sb = new StringBuilder();
+            var counter = str.Length;
+            foreach(var element in str)
+            {
+                if(counter % maxSymbols == 0)
+                {
+                    sb.Append(" ");
+                }
+
+                sb.Append(element);
+                counter--;
+            }
+            return sb.ToString();
         }
 
         private Headquarter GetUserHeadquarter(string name)
         {
-            for(int i = 0; i<accountInfo.headQuars.Count; i++)
+            for(int i = 0; i < accountInfo.headQuars.Count; i++)
             {
                 if(accountInfo.headQuars[i].name.Equals(name))
                 {
                     return accountInfo.headQuars[i];
                 }
-                if(i == accountInfo.headQuars.Count-1)
+                if(i == accountInfo.headQuars.Count - 1)
                 {
                     Debug.LogError("Headquarter isn't found");
                 }
@@ -162,7 +213,15 @@ namespace MyNameSpace
 
         void Update()
         {
-            
+
+        }
+
+        [Serializable]
+        public struct Deck
+        {
+            public string name;
+            public bool isSelected; //выбрана эта колода или нет
+            public List<CardAndCount> cards;
         }
 
         [Serializable]
@@ -177,12 +236,12 @@ namespace MyNameSpace
         }
 
         [Serializable]
-        public struct Headquarter //информация о штабах игрока
+        public struct Headquarter 
         {
             public string name;
             public int power;
             public int exp; //опыт штаба
-            public List<CardAndCount> cards; //все карты, выбранные для этого штаба
+            public List<Deck> decks; //колоды для этого штаба
         }
 
         [Serializable]
@@ -196,7 +255,7 @@ namespace MyNameSpace
         public struct Card //имя и количество данной карты (в профиле)
         {
             public string name;
-            public int count;
+            public int count; //это помечает ещё и факт исследования карты (если 0 и больше - исследована), если нет Card'ы, то она вовсе не исследована
         }
     }
 }
