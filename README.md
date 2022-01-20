@@ -13,4 +13,4 @@
 # Presentaton
 
 Small presentation:
-[Presentation.pptx](./docs/War of cards.pdf)
+[Presentation.pptx](https://github.com/BIGNIKi/The-war-of-cards/blob/main/docs/War%20of%20cards.pdf)
